@@ -117,7 +117,7 @@ body {
 }
 
 .border {
-  border: 3px solid #d1d8e0;
+  border: 5px solid #ffffff;
 }
 
 .priority-color {
@@ -137,14 +137,13 @@ body {
 }
 
 .ticket-cont {
-  height: 13rem;
+  height: 15rem;
   width: 17rem;
   background-color: lightblue;
 }
 
 .ticket-color {
   height: 1rem;
-  background-color: lightpink;
 }
 
 .ticket-id {
@@ -156,7 +155,29 @@ body {
 
 .task-area {
   font-size: 1.1rem;
-  height: calc(100% - 1rem - 2rem);
+  height: calc(100% - 1rem - 2rem - 2rem);
   background-color: #f1f2f6;
   padding: 0.5rem;
+  outline: none;
+  overflow: scroll;
+}
+
+.ticket-lock {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #f1f2f6;
+  height: 2rem;
+}
+
+.fa-lock,
+.fa-lock-open {
+  margin: 0 1rem 0.5rem 0;
+  font-size: 1.5rem;
+  color: #bdc3c7;
+}
+
+.fa-lock:hover,
+.fa-lock-open:hover {
+  cursor: pointer;
 }
